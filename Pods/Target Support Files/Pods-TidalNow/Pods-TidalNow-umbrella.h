@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ObjectDetectionVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ObjectDetectionVersionString[];
+FOUNDATION_EXPORT double Pods_TidalNowVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TidalNowVersionString[];
 

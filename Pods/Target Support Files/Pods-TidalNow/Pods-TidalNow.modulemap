@@ -1,0 +1,6 @@
+framework module Pods_TidalNow {
+  umbrella header "Pods-TidalNow-umbrella.h"
+
+  export *
+  module * { export * }
+}

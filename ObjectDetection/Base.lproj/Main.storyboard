@@ -12,16 +12,16 @@
         <!--ML ASSIST MODE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-YW-J6Q" customClass="PreviewView" customModule="ObjectDetection" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-YW-J6Q" customClass="PreviewView" customModule="TidalNow" customModuleProvider="target">
                                 <rect key="frame" x="44" y="12" width="756" height="357"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-XX-qft" customClass="OverlayView" customModule="ObjectDetection" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-XX-qft" customClass="OverlayView" customModule="TidalNow" customModuleProvider="target">
                                 <rect key="frame" x="44" y="12" width="756" height="357"/>
                                 <subviews>
                                     <view opaque="NO" clipsSubviews="YES" alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RqP-HE-5qz">
@@ -68,7 +68,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-YL-L1d" customClass="CurvedView" customModule="ObjectDetection" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-YL-L1d" customClass="CurvedView" customModule="TidalNow" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="170" width="844" height="220"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6N-mc-Zhj">
@@ -152,63 +152,10 @@
             </objects>
             <point key="canvasLocation" x="1274" y="955"/>
         </scene>
-        <!--EXPERT MODE-->
-        <scene sceneID="iTB-TJ-XNT">
-            <objects>
-                <viewController id="Xzj-R1-mSv" customClass="CameraViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UpW-QC-yLc">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UE2-tv-ruc">
-                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap here to enable camera access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njo-jb-BXe">
-                                        <rect key="frame" x="271" y="183" width="300" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="QAc-MG-pEg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="EXPERT MODE" id="tzo-rh-DtW">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Zhw-O1-rSm">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lRS-rM-aED">
-                                <rect key="frame" x="744" y="0.0" width="40" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="8"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="RECORD">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="recordButtonClicked:" destination="Xzj-R1-mSv" eventType="touchUpInside" id="7i4-gQ-MDw"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" systemColor="systemBlueColor"/>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="askForPermissionsLabel" destination="njo-jb-BXe" id="Irm-7Y-bqm"/>
-                        <outlet property="cameraButton" destination="lRS-rM-aED" id="I7L-bO-hqj"/>
-                        <outlet property="cameraView" destination="UE2-tv-ruc" id="PV5-dw-hwi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lYR-EU-wrl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1274" y="-792"/>
-        </scene>
         <!--MAIN MENU-->
         <scene sceneID="ZzC-97-4jJ">
             <objects>
-                <viewController id="kee-5w-VLM" customClass="MenuViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kee-5w-VLM" customClass="MenuViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Fe-WP-Xjl">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,11 +167,11 @@
                                     <constraint firstAttribute="height" constant="40" id="qCH-dD-MsQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="EXPERT MODE (NO ML)">
+                                <state key="normal" title="ML ASSISTED PHOTO MODE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Xzj-R1-mSv" kind="show" id="Xk5-S7-Z3o"/>
+                                    <segue destination="BaU-B8-vND" kind="show" id="kI5-HL-jrv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kta-G0-6wM">
@@ -234,7 +181,7 @@
                                     <constraint firstAttribute="height" constant="40" id="cJy-NY-rLV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="ML ASSIST MODE">
+                                <state key="normal" title="ML ASSISTED VIDEO MODE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -324,7 +271,7 @@ return to the main menu and proceed again.</string>
         <!--Inference View Controller-->
         <scene sceneID="3Ap-WK-W08">
             <objects>
-                <viewController id="H9B-4l-MbM" customClass="InferenceViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H9B-4l-MbM" customClass="InferenceViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rF4-XE-YOF">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,7 +289,7 @@ return to the main menu and proceed again.</string>
                                 <rect key="frame" x="44" y="0.0" width="756" height="95"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="INFO_CELL" rowHeight="161" id="uTx-Z2-72z" customClass="InfoCell" customModule="ObjectDetection" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="INFO_CELL" rowHeight="161" id="uTx-Z2-72z" customClass="InfoCell" customModule="TidalNow" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="756" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uTx-Z2-72z" id="evn-BS-Oui">
@@ -473,7 +420,7 @@ return to the main menu and proceed again.</string>
         <!--ML ASSIST MODE - CAPTURE-->
         <scene sceneID="HuJ-s6-jCY">
             <objects>
-                <viewController id="Jpe-WY-ZCF" customClass="MLCamViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jpe-WY-ZCF" customClass="MLCamViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AdM-Lz-KDW">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -526,7 +473,7 @@ return to the main menu and proceed again.</string>
         <!--HELP-->
         <scene sceneID="EAV-KG-0EU">
             <objects>
-                <viewController title="HELP" id="Wko-U5-a9A" customClass="HelpViewController" customModule="ObjectDetection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HELP" id="Wko-U5-a9A" customClass="HelpViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKB-ur-Pzv">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,8 +512,90 @@ return to the main menu and proceed again.</string>
             </objects>
             <point key="canvasLocation" x="1274" y="62"/>
         </scene>
+        <!--PHOTO MODE-->
+        <scene sceneID="1NJ-Ul-gpc">
+            <objects>
+                <viewController title="PHOTO MODE" id="BaU-B8-vND" customClass="CameraViewController" customModule="TidalNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fax-80-AbW">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="TzN-sb-WgT">
+                                <rect key="frame" x="179.66666666666663" y="29" width="480" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="Bj2-k3-E7v"/>
+                                    <constraint firstAttribute="height" constant="340" id="uPc-JV-Wci"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmi-W8-4PI" customClass="OverlayView" customModule="TidalNow" customModuleProvider="target">
+                                <rect key="frame" x="179.66666666666663" y="29" width="480" height="340"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="La4-zL-5aQ"/>
+                                    <constraint firstAttribute="height" constant="340" id="hFp-2d-sDD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKP-wG-apb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KKP-wG-apb" firstAttribute="trailing" secondItem="nmi-W8-4PI" secondAttribute="trailing" constant="140.27000000000001" id="A0d-8O-wUT"/>
+                            <constraint firstItem="KKP-wG-apb" firstAttribute="bottom" secondItem="nmi-W8-4PI" secondAttribute="bottom" id="HRV-qM-1bm"/>
+                            <constraint firstItem="nmi-W8-4PI" firstAttribute="leading" secondItem="KKP-wG-apb" secondAttribute="leading" constant="135.72999999999999" id="HbO-w2-lXQ"/>
+                            <constraint firstItem="KKP-wG-apb" firstAttribute="bottom" secondItem="TzN-sb-WgT" secondAttribute="bottom" id="Owj-A6-rOS"/>
+                            <constraint firstItem="TzN-sb-WgT" firstAttribute="leading" secondItem="KKP-wG-apb" secondAttribute="leading" constant="135.72999999999999" id="r71-xb-eIq"/>
+                            <constraint firstItem="KKP-wG-apb" firstAttribute="trailing" secondItem="TzN-sb-WgT" secondAttribute="trailing" constant="140.27000000000001" id="ztW-nE-LS2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sfg-8i-wj5">
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="qzA-rz-GOp">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rAF-kV-lXp">
+                                    <rect key="frame" x="694" y="0.0" width="90" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                    <connections>
+                                        <action selector="saveImage:" destination="BaU-B8-vND" eventType="touchUpInside" id="saf-NV-YUe"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="44Q-ro-vX3">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="4ug-2K-VCZ">
+                                    <rect key="frame" x="596" y="0.0" width="90" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Album"/>
+                                    <connections>
+                                        <action selector="openPhotoLibrary:" destination="BaU-B8-vND" eventType="touchUpInside" id="ft7-5Q-hgI"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="usU-1O-tVK">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vew-Ua-y8G">
+                                    <rect key="frame" x="504.66666666666674" y="0.0" width="83.333333333333371" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Camera"/>
+                                    <connections>
+                                        <action selector="openCamera:" destination="BaU-B8-vND" eventType="touchUpInside" id="B4X-m3-nSL"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="TzN-sb-WgT" id="P39-44-AxM"/>
+                        <outlet property="overlayView" destination="nmi-W8-4PI" id="pkZ-Kt-z9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKy-aa-P4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="-720"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Image" width="1752.3333740234375" height="339"/>
         <image name="down_icon" width="20" height="6"/>
         <image name="logo" width="266.66665649414062" height="42.666667938232422"/>
         <systemColor name="linkColor">

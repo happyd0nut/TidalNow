@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1314F4B4B67460E64EAA7F5BC410226"
-               BuildableName = "Pods_ObjectDetection.framework"
-               BlueprintName = "Pods-ObjectDetection"
+               BlueprintIdentifier = "6E8BDE8A60A3FFB5BD602B7A8B5B8D6A"
+               BuildableName = "Pods_TidalNow.framework"
+               BlueprintName = "Pods-TidalNow"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
